@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%     for t in drugs %}
+
+    <a href="{% url 'display:drug_page' t.id%}">{{t.name}}</a>
+    </br>
+
+{% endfor%}
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+<p>请输入两个数字</p>
+<form action="/knowledge/add/" method="get">
+    a: <input type="text" id="a" name="a"> <br>
+    b: <input type="text" id="b" name="b"> <br>
+    <p>result: <span id='result'></span></p>
+    <button type="button" id='sum'>提交</button>
+</form>
+
+<script>
+    $(document).ready(function(){
+      $("#sum").click(function(){
+        var a = $("#a").val();
+        var b = $("#b").val();
+
+        $.get("/knowledge/add/",{'a':a,'b':b}, function(ret){
+            $('#result').html(ret)
+        })
+      });
+    });
+</script>
+</body>
+</html>
