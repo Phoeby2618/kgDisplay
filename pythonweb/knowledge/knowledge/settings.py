@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'knowledge.wsgi.application'
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'knowledge',
 #         'USER': 'root',
-#         'PASSWORD':'zhangzhang',
+#         'PASSWORD':'***',
 #         'HOST':'127.0.0.1',
 #         'PORT':'3306',
 #
